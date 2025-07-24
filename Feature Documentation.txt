@@ -1,0 +1,16 @@
+| **Feature Name** | **Data Type** | **Description**                                                          |
+| ---------------- | ------------- | ------------------------------------------------------------------------ |
+| `show_id`        | Object        | Unique identifier for each title (Movie/TV Show)                         |
+| `type`           | Object        | Indicates whether the content is a **Movie** or **TV Show**              |
+| `title`          | Object        | Title of the movie or show                                               |
+| `director`       | Object        | Name of the director (may be missing for some titles)                    |
+| `cast`           | Object        | Names of lead actors involved in the content                             |
+| `country`        | Object        | Country where the content was produced                                   |
+| `date_added`     | Object        | Date when the content was added to Netflix                               |
+| `release_year`   | Int64         | Year when the content was released                                       |
+| `rating`         | Object        | Content rating (e.g., TV-MA, PG-13, R)                                   |
+| `duration`       | Object        | Duration of the movie or number of seasons for a TV show (raw format)    |
+| `duration_int`   | Float64       | Numeric duration extracted from the `duration` column                    |
+| `duration_type`  | Object        | Type of duration: **Minutes** (for movies) or **Seasons** (for TV shows) |
+| `listed_in`      | Object        | Genres or categories assigned to the content                             |
+| `description`    | Object        | A brief summary or synopsis of the content                               |
